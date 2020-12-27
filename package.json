@@ -1,0 +1,24 @@
+{
+  "name": "daybreakCoworking",
+  "version": "1.0.0",
+  "description": "Website for local coworking space in Daybreak.",
+  "main": "index.js",
+  "repository": "git@github.com:dock90/daybreakCoworking.git",
+  "author": "EdwardGoomba <edward@dock90.io>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^10.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0"
+  }
+}
