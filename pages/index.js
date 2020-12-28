@@ -3,21 +3,43 @@ import styled from 'styled-components'
 // components
 import Header from '../components/header'
 
-{/* <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Sans&display=swap" rel="stylesheet">  */}
-
-// font-family: 'Noto Sans', sans-serif;
-// font-family: 'Inconsolata', monospace;
-
-
 // styles
 const Container = styled.div`
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
 `
 
-const Title = styled.h1`
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 48px;
+const Body = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 4rem;
+  padding: 4rem 2rem;
+`
+
+const Intro = styled.div`
+  h1 {
+    color: ${({ theme }) => theme.colors.dark3};
+  }
+
+  span {
+    color: ${({ theme }) => theme.colors.secondary};
+  }
+`
+
+const Newsletter = styled.div`
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  margin-top: 2rem;
+`
+
+const FormContainer = styled.div`
+  border-radius: 4px;
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
+  box-shadow: 10px 10px 58px -17px rgba(0,0,0,0.75);
 `
 
 const Home = () => (
@@ -28,6 +50,17 @@ const Home = () => (
       <meta name='description' content='Daybreak Coworking is an upcoming independent coworking space to be located right here in Daybreak.' />
     </Head>
     <Header />
+    <Body>
+      <Intro>
+        <h1>We are on a mission to open the first <span>coworking space</span> in Daybreak.</h1>
+        <h2>Our goal is to provide a comfortable, flexible and affordable workspace with all the amenities you need so you can focus and have a productive work day.</h2>
+      </Intro>
+      <Newsletter>
+        <FormContainer>
+          <script async data-uid="add856650c" src="https://creative-knitter-3944.ck.page/add856650c/index.js" />
+        </FormContainer>
+      </Newsletter>
+    </Body>
   </Container>
 )
 
