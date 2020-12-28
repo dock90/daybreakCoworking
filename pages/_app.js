@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+// css
+import '../components/newsletter.css'
 
 // font-family: 'Noto Sans', sans-serif;
 // font-family: 'Inconsolata', monospace;

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styled from 'styled-components'
 // components
 import Header from '../components/header'
+import Newsletter from '../components/newsletter'
 
 // styles
 const Container = styled.div`
@@ -29,7 +30,7 @@ const Intro = styled.div`
   }
 `
 
-const Newsletter = styled.div`
+const Signup = styled.div`
   display: grid;
   justify-content: center;
   align-items: start;
@@ -55,11 +56,11 @@ const Home = () => (
         <h1>We are on a mission to open the first <span>coworking space</span> in Daybreak.</h1>
         <h2>Our goal is to provide a comfortable, flexible and affordable workspace with all the amenities you need so you can focus and have a productive work day.</h2>
       </Intro>
-      <Newsletter>
+      <Signup>
         <FormContainer>
-          <script async data-uid="add856650c" src="https://creative-knitter-3944.ck.page/add856650c/index.js" />
+          <Newsletter />
         </FormContainer>
-      </Newsletter>
+      </Signup>
     </Body>
   </Container>
 )
